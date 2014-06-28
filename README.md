@@ -1,7 +1,7 @@
 flow-sum
 ========
 
-Writable stream which returns the summation of streamed numeric data.
+Transform stream which returns the summation of streamed numeric data.
 
 
 ## Installation
