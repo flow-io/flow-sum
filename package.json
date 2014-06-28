@@ -1,7 +1,7 @@
 {
   "name": "flow-sum",
   "version": "0.0.1",
-  "description": "Writable stream which returns the summation of streamed numeric data.",
+  "description": "Transform stream which returns the summation of streamed numeric data.",
   "author": {
     "name": "Athan Reines",
     "email": "athan@nodeprime.com"
