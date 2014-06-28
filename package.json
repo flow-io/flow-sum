@@ -31,7 +31,8 @@
     "flow.io",
     "sum",
     "reduce",
-    "statistics"
+    "statistics",
+    "stats"
   ],
   "bugs": {
     "url": "https://github.com/kgryte/flow-sum/issues"
