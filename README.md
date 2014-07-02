@@ -31,6 +31,9 @@ var stream = sStream().stream();
 
 // Pipe the data:
 readStream.pipe( stream )
+	.pipe( eventStream.map( function( d, clbk ) {
+		clbk( null, d.toString() );
+	}))
 	.pipe( process.stdout );
 ```
 
