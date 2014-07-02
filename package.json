@@ -1,6 +1,6 @@
 {
   "name": "flow-sum",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Transform stream which returns the summation of streamed numeric data.",
   "author": {
     "name": "Athan Reines",
