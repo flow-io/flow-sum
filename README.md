@@ -14,30 +14,24 @@ $ npm install flow-sum
 ## Examples
 
 ``` javascript
-var // Flow sum stream generator:
+var eventStream = require( 'event-stream' ),
 	sStream = require( 'flow-sum' );
 
-var data = new Array( 1000 ),
-	stream;
-
 // Create some data...
+var data = new Array( 1000 );
 for ( var i = 0; i < 1000; i++ ) {
 	data[ i ] = Math.random();
 }
 
-// Create a new stream:
-stream = sStream().stream();
+// Create a readable stream:
+var readStream = eventStream.readArray( data );
 
-// Add a listener:
-stream.on( 'data', function( sum ) {
-	console.log( 'Sum: ' + sum );
-});
+// Create a new sum stream:
+var stream = sStream().stream();
 
-// Write the data to the stream...
-for ( var j = 0; j < data.length; j++ ) {
-	stream.write( data[ j ] );
-}
-stream.end();
+// Pipe the data:
+readStream.pipe( stream )
+	.pipe( process.stdout );
 ```
 
 ## Tests
