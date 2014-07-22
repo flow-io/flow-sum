@@ -18,7 +18,7 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kgryte/flow-sum.git"
+    "url": "git://github.com/flow-io/flow-sum.git"
   },
   "keywords": [
     "stream",
@@ -34,7 +34,7 @@
     "stats"
   ],
   "bugs": {
-    "url": "https://github.com/kgryte/flow-sum/issues"
+    "url": "https://github.com/flow-io/flow-sum/issues"
   },
   "dependencies": {
     "flow-reduce": "~0.0.0"
